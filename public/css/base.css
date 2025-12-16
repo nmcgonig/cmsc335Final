@@ -1,0 +1,20 @@
+/* background-color, color and font-size properties */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+html, body {
+    background-color: #212529;
+}
+body {
+    margin-bottom: 5rem;
+}
+
+h1, h2, h3, nav{
+    color:#89e7af;
+    font-family: "Eagle Lake", serif;
+
+}
+
+p {
+    font-size: larger !important;
+}
