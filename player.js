@@ -243,7 +243,7 @@ router.get('/scout', async (req, res) => {
                                 </li>` ,'');
 
     let opponentGamesAnalyzed = opponentsOpenings.reduce((a, c) => a += c.total, 0)
-
+    index = 1
     let playerMostCommon = [...playersOpenings].sort((a, b) => b.total - a.total).slice(0, 5).reduce((a,c) => a += 
                                 `<li class="list-group-item d-flex justify-content-between bg-light-success text-light">
                                     <span class="badge bg-danger me-2">${index++}</span>
@@ -252,6 +252,7 @@ router.get('/scout', async (req, res) => {
                                     </div>
                                     <span class="badge bg-dark border border-light rounded-pill">${c.total} games</span>
                                 </li>` ,'');
+    index = 1
     let playerWeakest = [...playersOpenings].sort((a, b) => a.winRate - b.winRate).slice(0, 5).reduce((a,c) => a += 
                                 `<li class="list-group-item d-flex justify-content-between bg-light-success text-light">
                                     <span class="badge bg-danger me-2">${index++}</span>
