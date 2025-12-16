@@ -192,7 +192,7 @@ router.get('/user', async (req, res) => {
             </div>`;
 
             return res.render('details.ejs', {
-                profileURL: data.url,
+                profileURL: profileData.url,
                 pageTitle: `Stats for ${req.query.username}`,
                 username: req.query.username,
                 data: profileData,
