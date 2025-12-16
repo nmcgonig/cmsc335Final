@@ -1,5 +1,4 @@
-Submitted by: Nicholas McGonigle (nmcgonig)
-
+Submitted by: Nicholas McGonigle (nmcgonig)<br>
 Group Members: Nicholas McGonigle (nmcgonig)
 
 App Description: Allow users to see profiles, compare openings, and view entered instructional games using the chess.com API.
