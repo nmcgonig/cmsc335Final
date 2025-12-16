@@ -7,23 +7,13 @@ const path = require("path");
 const bodyParser = require("body-parser");
 
 
-// CHECK USAGE
-if (process.argv.length != 3) {
-  process.stdout.write(`Usage chesscomStatViewer.js portNumber`);
-  process.exit(1);
-}
-
-const fs = require("fs");
-const portNumber = parseInt(process.argv[2], 10);
-
 /* start app on port and setup */
 const app = express();
-app.listen(portNumber);
+app.listen(5000);
 app.set("view engine", "ejs");
 app.set("views", path.resolve(__dirname, "templates"));
 app.use(bodyParser.urlencoded({extended:false}))
 app.use(express.static(path.join(__dirname, 'public')));
-process.stdout.write(`Web server started and running at http://localhost:${portNumber}\n`)
 
 /* COMMAND LINE INTERFACE START */
 const prompt = "Stop to shutdown the server: \n";
